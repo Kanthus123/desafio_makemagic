@@ -54,4 +54,22 @@ BackEnd
 |   |-- urls.py  
 |   |-- views.py  
 |  
++--- static (CSS/JS)  
+|   |  
+|   +-- css 
+|   |      
+|   +-- fonts
+|   |  
+|   +-- js  
+|   |
+|   +-- vendor 
+|  
++--- templates (Arquivos do site) <--- Os aquivos aqui não iram bater com a programação atual do backend, pois algumas modificações foram feitas  
+|   |  
+|   +-- personagensapi 
+|   |   |     
+|   |   |-- base.htmml
+|   |   |-- personagem_form.html  
+|   |   |-- personagem_list.html  
+| 
 </pre>
