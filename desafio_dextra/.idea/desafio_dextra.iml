@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/desafio_dextra" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/desafio_dextra2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/desafio_dextra2/desafio_dextra2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/desafio_dextra2/personagensapi" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/desafio_dextra2/templates" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/desafio_dextra2/templates/personagensapi" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
