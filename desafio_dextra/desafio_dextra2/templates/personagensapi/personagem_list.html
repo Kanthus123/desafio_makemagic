@@ -1,0 +1,44 @@
+{% extends "personagem_register/base.html" %}
+
+{% block content %}
+<table class="table table-borderless">
+    <thead class="border-bottom font-weight-bold">
+        <tr>
+            <td>Nome</td>
+            <td>Role</td>
+            <td>School</td>
+            <td>House</td>
+            <td>Patronous</td>
+
+            <td>
+                <a href="{% url 'personagem_insert' %}" class="btn btn-outline-success">
+                    <i class="fas fa-plus"></i> Inserir
+                </a>
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+        {% for personagem in personagem_list %}
+            <tr>
+                <td>{{personagem.fullname}}</td>
+                <td>{{personagem.role}}</td>
+                <td>{{personagem.school}}</td>
+                <td>{{personagem.house}}</td>
+                <td>{{personagem.patronous}}</td>
+                <td>
+                    <a href="{% url 'personagem_update' personagem.id %}" class="btn text-secondary px-0">
+                        <i class="far fa-edit fa-lg"></i>
+                    </a>
+                    <form action="{% url 'personagem_delete' personagem.id %}" method="post" class="d-inline">
+                        {% csrf_token %}
+                        <button type="submit" class="btn">
+                            <i class="far fa-trash-alt fa-lg text-danger float-right"></i>
+                        </button>
+                    </form>
+                </td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock content %}

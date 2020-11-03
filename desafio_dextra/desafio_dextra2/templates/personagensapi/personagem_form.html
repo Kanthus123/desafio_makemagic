@@ -1,0 +1,33 @@
+{% extends "personagem_register/base.html" %}
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+<form action="" method="post" autocomplete="off">
+    {% csrf_token %}
+    {{form.nome|as_crispy_field}}
+    {{form.role|as_crispy_field}}
+    {{form.school|as_crispy_field}}
+
+    <div class="row">
+        <div class="col-md-4">
+            {{form.house|as_crispy_field}}
+        </div>
+        <div class="col-md-8">
+            {{form.patronous|as_crispy_field}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+            <button type="submit" class="btn btn-success btn-block btn-lg"><i class="fas fa-database"></i>
+                Enviar</button>
+        </div>
+        <div class="col-md-4">
+            <a href="{% url 'personagem_list' %}" class="btn btn-secondary btn-block btn-lg">
+                <i class="fas fa-stream"></i> Voltar
+            </a>
+        </div>
+    </div>
+
+</form>
+{% endblock content %}
